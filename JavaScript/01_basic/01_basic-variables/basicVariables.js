@@ -3,6 +3,7 @@
 // variables are a way in programming to store information
 // created container to put some type of value inside
 // can have any name we want
+// variables have a certain type associated with them
 // variables can be used throught the whole programm
 
 // var, let, const
