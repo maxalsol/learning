@@ -9,9 +9,9 @@ let int = 5;
 let float = 7.4;
 
 // find out the type of a, int and float with typeof keyword
-console.log(typeof a);
-console.log(typeof int);
-console.log(typeof float);
+console.log(typeof a); // number
+console.log(typeof int); // number
+console.log(typeof float); // number
 
 // arithmetic on numbers possible
 console.log(int + float);

@@ -10,9 +10,9 @@ console.log(b);
 console.log(c);
 
 // find out the type of a boolean with typeof keyword
-console.log(typeof a);
-console.log(typeof b);
-console.log(typeof c);
+console.log(typeof a); // boolean
+console.log(typeof b); // boolean
+console.log(typeof c); // boolean
 
 // booleans behave different to strings and numbers
 // no maths possible, special operators necessary to determint AND and OR
@@ -40,7 +40,7 @@ let gout = false;
 console.log(!gout);
 
 //* EXERCISE
-// create two variablesnamed happy and sad
+// create two variables named happy and sad
 // set happy to true and sad to false
 // log happy AND sad to the console
 let happy = true;

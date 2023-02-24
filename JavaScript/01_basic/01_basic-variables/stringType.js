@@ -15,7 +15,7 @@ let c = 'Horst says "Hi"';
 // let d = 'Bernd says 'Hi'';
 
 // find out the type of a string with typeof keyword
-console.log(typeof a);
+console.log(typeof a); // string
 
 // strings can be combined together
 let d = "Good";
