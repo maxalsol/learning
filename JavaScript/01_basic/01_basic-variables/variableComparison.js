@@ -1,4 +1,5 @@
 //? VARIABLE COMPARISON
+// the return of comparing variables is always a boolean
 
 // NUMBERS
 let a = 1;
@@ -44,5 +45,24 @@ console.log(d > e); // true
 // exact same thing happen with <= and >=
 
 // BOOLEANS
+//since booleans can only be true or false there is no <, >, <=, >=
+let g = true;
+let h = false;
+let i = true;
+
+// check if equal to one another ==
+console.log(g == h); // false
+console.log(g == i); // true
+
+// check if not equal to one another !=
+console.log(g != h); // true
+console.log(g != i); // false
+
+// NULL and UNDEFINED
+let j = null;
+let k = undefined;
+
+// check if equal to one another ==
+console.log(j == k); // true
 
 //* Exercise
