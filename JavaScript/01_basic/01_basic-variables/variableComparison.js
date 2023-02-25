@@ -64,5 +64,11 @@ let k = undefined;
 
 // check if equal to one another ==
 console.log(j == k); // true
+// true because both kinda represent the same thing -> the lack of a value
+// both j and k null is true and j and k undefined is true
+
+// check if not equal to one another !=
+console.log(j != k); // false
+// same reason as above
 
 //* Exercise
