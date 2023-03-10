@@ -26,6 +26,8 @@ mult(3, 4, function (outcome) {
     console.log(`The result is: ${outcome}`);
 });
 
+// when adding a function as an argument DON`T use () because then it´ll be a function call
+
 //* EXERCISE
 // create a new function that takes two arguments
 // 1. name
