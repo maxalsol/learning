@@ -4,21 +4,40 @@
 // that variable contains the definition of the function
 // means we can pass this variable which is a function to another function and use it inside that function
 
-function printVariable(variable) {
-    console.log(variable);
+function add(number1, number2, callback) {
+    let result = number1 + number2;
+    callback(result);
 }
 
-function func(callback) {
-    callback('more data');
+function logResult(result) {
+    console.log(`The result is: ${result}`);
 }
 
-// in the call for func the argument printVariable is mapped to the variable callback
-func(printVariable);
+add(2, 3, logResult);
+
+// callback logResult inside function call add() can be declared as an anonymous function
+// directly insde function call
+
+function mult(num3, num4, callback) {
+    callback(num3 * num4);
+}
+
+mult(3, 4, function (outcome) {
+    console.log(`The result is: ${outcome}`);
+});
 
 //* EXERCISE
 // create a new function that takes two arguments
 // 1. name
-// 2. callback that print out what we pass to it (printVariable)
+// 2. callback that prints out what we pass to it
 // take name and append "Hello" to the beginning of the name
 
-function greeting(name, callback) {}
+function greeting(name, callback) {
+    callback('Hello ' + name);
+}
+
+function printGreeting(variable) {
+    console.log(variable);
+}
+
+greeting('Alex', printGreeting);
