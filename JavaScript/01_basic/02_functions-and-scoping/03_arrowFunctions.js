@@ -1,5 +1,6 @@
 //? ARROW FUNCTIONS
 // other way declaring functions
+// smaller and more condensed
 
 // normal function
 function sum(a, b) {
@@ -27,7 +28,14 @@ console.log(sumArrow);
 let mult = (e, f) => e * f;
 console.log(mult(5, 6));
 
+// function without arguments just get an empty set of parentheses
+let hii = () => {
+    console.log('Hi');
+};
+hii();
+
 //* EXERCISE
+// 1
 // turn the following function into an arrow function
 function printName(name) {
     console.log(name);
@@ -39,3 +47,10 @@ let namePrinter = (name) => {
 
 printName('Name1');
 namePrinter('Name2');
+
+// 2
+function printHi(name) {
+    return 'Hi ' + name;
+}
+let printHello = (name) => console.log('Hello ' + name);
+printHello('Martin');
