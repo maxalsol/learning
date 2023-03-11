@@ -6,5 +6,4 @@
 // last thing is the outer most function
 
 // good for error tracking and tracing
-
-//*
+// bug fixing
