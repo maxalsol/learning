@@ -21,8 +21,21 @@ console.log(sumArrow(3, 4));
 console.log(sum);
 console.log(sumArrow);
 
+// sytax can get shorter with arrow functions
+// arguemt´s parentheses not necessary with only one argument
+// if only one line of code and no {} JS will auto return
+let mult = (e, f) => e * f;
+console.log(mult(5, 6));
+
 //* EXERCISE
 // turn the following function into an arrow function
 function printName(name) {
     console.log(name);
 }
+
+let namePrinter = (name) => {
+    console.log(name);
+};
+
+printName('Name1');
+namePrinter('Name2');
