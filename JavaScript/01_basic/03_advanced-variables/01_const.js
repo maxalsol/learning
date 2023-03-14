@@ -11,5 +11,4 @@ a = 2;
 console.log(a);
 
 // if we don´t want to change the value of a variable we use const instead of let
-
-//* EXERCISES
+// main reason for const is for values that will NOT change
