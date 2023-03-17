@@ -27,7 +27,7 @@ console.log(a);
 
 const b = [
     ['hi', 'bye'],
-    [1, 2, 3],
+    [1, 2, 3]
 ];
 console.log(b);
 
@@ -43,6 +43,10 @@ console.log(c[1][1][2]); // 3
 // get thrid element from nested array
 console.log(b[1][2]); // 3
 
+// elements in array can be changed
+a[3] = false;
+console.log(a);
+
 //* EXERCISE
 // create an array with first five letters of alphabet
 // print out the letter in the middle (c)
@@ -57,7 +61,7 @@ console.log(arr1[2]); // c
 let arr2 = [
     [1, 2, 3, 4, 5],
     [6, 7, 8, 9, 10],
-    [11, 12, 13, 14, 15],
+    [11, 12, 13, 14, 15]
 ];
 console.log(arr2[0][3]); // 4
 console.log(arr2[1][2]); // 8
