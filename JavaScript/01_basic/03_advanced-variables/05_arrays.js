@@ -27,9 +27,38 @@ console.log(a);
 
 const b = [
     ['hi', 'bye'],
-    [1, 2],
+    [1, 2, 3],
 ];
 console.log(b);
 
 const c = [a, b];
-console.log(c);
+console.log(c[0]); // prints array a
+
+// get first element in from first array in nested array
+console.log(c[0][0]); // 1
+
+// get thrid element from second nested array
+console.log(c[1][1][2]); // 3
+
+// get thrid element from nested array
+console.log(b[1][2]); // 3
+
+//* EXERCISE
+// create an array with first five letters of alphabet
+// print out the letter in the middle (c)
+let arr1 = ['a', 'b', 'c', 'd', 'e'];
+console.log(arr1[2]); // c
+
+// create an array with three nested arrays
+//   nested array one should hold numbers 1-5
+//   nested array two should hold numbers 6-10
+//   nested array three should hold numbers 11-15
+// print out 4, 8, 11
+let arr2 = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+];
+console.log(arr2[0][3]); // 4
+console.log(arr2[1][2]); // 8
+console.log(arr2[2][0]); // 11
