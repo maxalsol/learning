@@ -2,6 +2,31 @@
 // functions to perform tasks on an array
 const arr = [1, 2, 3, 4, 5];
 
+//! .length()
+// accesses the length of an array
+let length = arr.length;
+console.log(length);
+
+//! .push()
+// ADD an element TO the END of the array
+arr.push(6);
+console.log(arr);
+
+//! .pop()
+// REMOVES and RETURNS an element FROM the END of the array
+arr.pop();
+console.log(arr);
+
+//! .unshift()
+// ADD an element TO the BEGINNING of the array
+arr.unshift(0);
+console.log(arr);
+
+//! .shift()
+// REMOVES  and RETURNS an element FROM the BEGINNING of the array
+arr.shift();
+console.log(arr);
+
 //! .forEach()
 // loops through the array
 // takes a function as an argument
