@@ -40,14 +40,14 @@ console.log(slicedArr); // [2, 3]
 const arr2 = ['blue', 'red', 'yellow', 'green', 'orange'];
 const arr3 = ['Mars', 'Earth', 'Jupiter', 'Saturn'];
 // REMOVE
-// fist parameter is index of element to be removed
-// second parameter is number of elements to be removed
+// fist parameter is index of element to be removed - startIndex
+// second parameter is number of elements to be removed - deleteCount
 arr2.splice(3, 1);
 console.log(arr2); // changed original array
 console.log(arr2.splice(3, 1)); // removed element
 // ADD
-// first parameter is index where element shall be added
-// second parameter is 0 because we don´t remove anything
+// first parameter is index where element shall be added - startindex
+// second parameter is 0 because we don´t remove anything - deleteCount
 // third, fourth, ... are the elements to add
 arr3.splice(1, 0, 'Venus');
 console.log(arr3); // updated array
@@ -75,9 +75,10 @@ console.log('original array: ' + arr);
 console.log('mapped array: ' + mappedArr);
 
 //! .sort()
-// sorts elements of an array
+// converts elements of an array into strings
+// then sorts them in ascending order
 // overwrites original array
-//
+// https://www.youtube.com/watch?v=nq0DC5M3Kc8
 
 //! .filter()
 // for filtering out selected values from the array
