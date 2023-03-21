@@ -27,6 +27,31 @@ console.log(arr);
 arr.shift();
 console.log(arr);
 
+//! .slice()
+// returns selected elements in an array as a new array
+// selects from a given start up to a not inclusive given end
+// does not change the original array
+let slicedArr = arr.slice(1, 3);
+console.log(slicedArr); // [2, 3]
+
+//! .splice()
+// adds and/or removes array elements
+// overwrites the original array
+const arr2 = ['blue', 'red', 'yellow', 'green', 'orange'];
+const arr3 = ['Mars', 'Earth', 'Jupiter', 'Saturn'];
+// REMOVE
+// fist parameter is index of element to be removed
+// second parameter is number of elements to be removed
+arr2.splice(3, 1);
+console.log(arr2); // changed original array
+console.log(arr2.splice(3, 1)); // removed element
+// ADD
+// first parameter is index where element shall be added
+// second parameter is 0 because we don´t remove anything
+// third, fourth, ... are the elements to add
+arr3.splice(1, 0, 'Venus');
+console.log(arr3); // updated array
+
 //! .forEach()
 // loops through the array
 // takes a function as an argument
@@ -48,6 +73,11 @@ const mappedArr = arr.map((element) => {
 });
 console.log('original array: ' + arr);
 console.log('mapped array: ' + mappedArr);
+
+//! .sort()
+// sorts elements of an array
+// overwrites original array
+//
 
 //! .filter()
 // for filtering out selected values from the array
