@@ -23,5 +23,5 @@ const element = document.createElement('p');
 element.innerText = 'Hello there!';
 
 // to add it to our page we use
-// it will be appended to the end of our document
 document.body.appendChild(element);
+// it will be appended to the end of our document
