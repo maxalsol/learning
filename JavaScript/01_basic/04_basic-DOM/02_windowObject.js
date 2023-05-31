@@ -10,3 +10,4 @@ window.console.log('window.console.log');
 console.log(window);
 
 // most of the time window.something just used to put an eventListener
+//   -> window.addEventListener
