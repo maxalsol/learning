@@ -59,6 +59,5 @@ for (let k = 0; k < 5; k++) {
 // modify this loop and exit the loop when the value is equal to 5 by using break
 for (l = 0; l < 11; l++) {
     console.log(l);
-
     if (l === 5) break;
 }
